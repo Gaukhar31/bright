@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Inter', sans-serif;
+    color: hsl(240, 100%, 5%);
+    background-color: hsl(36, 100%, 99%);
+    line-height: 1.6;
+}
+  
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.second {
+    display: flex;
+    flex-direction: row;
+}
+
+.second p:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.header .second a {
+    margin-right: 1rem;
+    color: hsl(236, 13%, 42%);
+    text-decoration: none;
+    font-weight: 700;
+}
+  
+.main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+  
+.building {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+  
+.photo img {
+    width: 100%;
+    height: auto;
+}
+  
+.bright-future {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+  
+.bright-future h1 {
+    font-size: 2.5rem;
+    color: hsl(240, 100%, 5%);
+}
+  
+.bright-future p {
+    color: hsl(233, 8%, 79%);
+}
+  
+.bright-future button {
+    padding: 9px 10px;
+    background-color: hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
+.bright-future button:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+  
+.questions {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+    padding: 1.5rem;
+}
+  
+.questions h1 {
+    color: hsl(35, 77%, 62%);
+}
+  
+.questions h3 {
+    margin: 1rem 0 8px;
+}
+  
+.questions p {
+    color: hsl(233, 8%, 79%);
+}
+  
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+  
+.description .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.letters h5:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.footer img {
+    width: 100%;
+    height: auto;
+}
+
+.letters {
+    margin-left: 15px;
+}
+  
+.footer h2 {
+    font-size: 2rem;
+    color:hsl(5, 85%, 63%);
+}
+  
+.footer h5 {
+    font-size: 1rem;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+}
+  
+.footer p {
+    color: hsl(233, 8%, 79%);
+}
+  
+
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+      }
+      .bright-future {
+        grid-template-columns: 1fr;
+      }
+      .footer {
+        grid-template-columns: 1fr;
+      }
+}
